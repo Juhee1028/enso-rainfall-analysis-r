@@ -16,16 +16,19 @@ The results indicate that ENSO is significantly associated with summer rainfall.
 - Do average rainfall levels differ between El Niño, Neutral, and La Niña phases?
 - How reliable are SOI and ENSO phase as predictors of summer rainfall?
 
-## Data
+# Data Availability
 
-The analysis uses two datasets:
+The datasets used in this project were provided through QUT Canvas for
+coursework and are not redistributed in this repository.
+
+To reproduce the analysis, authorised users should obtain the following files
+from their original source and place them in this directory:
 
 - `total_seasonal_rainfall.csv`
 - `seasonal_soi_data.csv`
 
-The datasets were joined using `Year` and `Season`. The analysis uses seasonal rainfall totals, mean seasonal SOI values, and ENSO phase classifications.
-
-The summer subset contains 73 observations:
+The datasets remain subject to the ownership and licensing terms of their
+original providers.
 
 | ENSO phase | Observations |
 |---|---:|
@@ -140,3 +143,11 @@ enso-rainfall-analysis-r/
 │   └── seasonal_soi_data.csv
 ├── figures/
 └── LICENSE
+
+## License
+
+The source code in this repository is available under the MIT License.
+
+The datasets are not included in the MIT License and are not redistributed
+through this repository. They remain subject to the terms of their original
+providers.
