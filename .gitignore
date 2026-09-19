@@ -47,3 +47,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Course datasets - keep local and do not publish
+data/*.csv
+
+# Keep the data usage instructions in Git
+!data/README.md
+/total_seasonal_rainfall.csv
+/seasonal_soi_data.csv
