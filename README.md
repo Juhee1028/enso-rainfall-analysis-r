@@ -16,19 +16,21 @@ The results indicate that ENSO is significantly associated with summer rainfall.
 - Do average rainfall levels differ between El Niño, Neutral, and La Niña phases?
 - How reliable are SOI and ENSO phase as predictors of summer rainfall?
 
-# Data Availability
+## Data Availability
 
 The datasets used in this project were provided through QUT Canvas for
 coursework and are not redistributed in this repository.
 
 To reproduce the analysis, authorised users should obtain the following files
-from their original source and place them in this directory:
+from their original source and place them in the `data/` directory:
 
 - `total_seasonal_rainfall.csv`
 - `seasonal_soi_data.csv`
 
 The datasets remain subject to the ownership and licensing terms of their
 original providers.
+
+The summer subset used in the detailed analysis contained 73 observations:
 
 | ENSO phase | Observations |
 |---|---:|
@@ -139,10 +141,31 @@ enso-rainfall-analysis-r/
 ├── README.md
 ├── enso_rainfall_analysis.R
 ├── data/
-│   ├── total_seasonal_rainfall.csv
-│   └── seasonal_soi_data.csv
+│   └── README.md
 ├── figures/
+├── .gitignore
 └── LICENSE
+```
+
+The two input CSV files are stored locally in the `data/` directory but are
+excluded from Git using `.gitignore`.
+
+## Running the Analysis
+
+Install the required R packages:
+
+```r
+install.packages(c("tidyverse", "broom"))
+```
+
+Clone the repository, place the authorised input files in the `data/`
+directory, and run:
+
+```r
+source("enso_rainfall_analysis.R")
+```
+
+Generated visualisations will be saved in the `figures/` directory.
 
 ## License
 
